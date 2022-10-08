@@ -14,5 +14,12 @@ body {
   border: solid 1em;
   border-color: rgba(5,34,115,0.9);;
   border-radius: 50%;
-  color: #FFFF04;
+  /* text-align: center; */
+  /* color: #FFFF04; */
+}
+
+.hours {
+  background-color: #FFFF04;
+  width: 6em;
+  height: 0.2em;
 }
