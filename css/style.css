@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to right, #CFFCFF, #AAEFDF);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  background: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  width: 18em;
+  height: 18em;
+  border: solid 1em;
+  border-color: rgba(5,34,115,0.9);;
+  border-radius: 50%;
+  color: #FFFF04;
+}
