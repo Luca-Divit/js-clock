@@ -14,9 +14,9 @@ body {
   border: solid 1em;
   border-color: rgba(5,34,115,0.9);;
   border-radius: 50%;
-  display: flex;
+  /* display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; */
   /* text-align: center; */
   /* color: #FFFF04; */
 }
@@ -25,4 +25,31 @@ body {
   background-color: #FFFF04;
   width: 6em;
   height: 0.2em;
+  position: relative;
+  top: 9em;
+  left: 3em;
+  /* transform: rotate(0deg); */
+  transform-origin: 100%;
+}
+
+.minutes {
+  background-color: #FFFF04;
+  width: 7em;
+  height: 0.2em;
+  position: relative;
+  top: 8.8em;
+  left: 2em;
+  /* transform: rotate(0deg); */
+  transform-origin: 100%;
+}
+
+.seconds {
+  background-color: #FFFF04;
+  width: 8em;
+  height: 0.2em;
+  position: relative;
+  top: 8.6em;
+  left: 1em;
+  /* transform: rotate(0deg); */
+  transform-origin: 100%;
 }
