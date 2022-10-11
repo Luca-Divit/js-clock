@@ -12,7 +12,7 @@ body {
   width: 18em;
   height: 18em;
   border: solid 1em;
-  border-color: rgba(5,34,115,0.9);;
+  border-color: rgba(5,34,115,0.9);
   border-radius: 50%;
   /* display: flex;
   justify-content: space-evenly;
@@ -30,6 +30,7 @@ body {
   left: 3em;
   /* transform: rotate(0deg); */
   transform-origin: 100%;
+  box-shadow: 0 0 0.1em rgba(5,34,115,0.9);
 }
 
 .minutes {
@@ -41,6 +42,7 @@ body {
   left: 2em;
   /* transform: rotate(0deg); */
   transform-origin: 100%;
+  box-shadow: 0 0 0.1em rgba(5,34,115,0.9);
 }
 
 .seconds {
@@ -52,15 +54,20 @@ body {
   left: 1em;
   /* transform: rotate(0deg); */
   transform-origin: 100%;
+  box-shadow: 0 0 0.1em rgba(5,34,115,0.9);
 }
 
 h1 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Bebas Neue', cursive;
   margin-bottom: 3em;
+  color: #FFFF04;
+  text-shadow: 0 0 0.1em rgba(5,34,115,0.9);
+  /* color: transparent;
+  text-shadow: 1em 1em 0 rgb(5 34 115 / 90%); */
 }
 
 @media (max-width: 720px) {
   h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
 }

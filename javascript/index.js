@@ -46,17 +46,17 @@ function setTime() {
   const hour = time.getHours();
   const minute = time.getMinutes();
   const second = time.getSeconds();
-  const whatIsToday = `Today is: ${nameDay(time)} ${day(time)} ${monthDay(time)} ${time.getFullYear()}`;
+  const whatIsToday = `${nameDay(time)} <span style="font-size: 2em; font-family: 'Orbitron', sans-serif;">${day(time)}</span> ${monthDay(time)} ${time.getFullYear()}`;
   // console.log(hour);
   // console.log(minute);
   // console.log(second);
   seconds.setAttribute('style', `transform: rotate(${(second + 15) / 60 * 360}deg)`);
   minutes.setAttribute('style', `transform: rotate(${(minute + 15) / 60 * 360}deg)`);
   hours.setAttribute('style', `transform: rotate(${(hour + 15) / 12 * 360}deg)`);
-  if (header.innerText === whatIsToday) {
+  if (header.innerHTML === whatIsToday) {
     return;
   } else {
-    header.innerText = whatIsToday;
+    header.innerHTML = whatIsToday;
   };
 };
 
