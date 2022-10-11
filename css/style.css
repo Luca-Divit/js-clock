@@ -53,3 +53,14 @@ body {
   /* transform: rotate(0deg); */
   transform-origin: 100%;
 }
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 3em;
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 1.1em;
+  }
+}
