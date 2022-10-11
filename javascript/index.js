@@ -57,7 +57,7 @@ function setTime() {
     return;
   } else {
     header.innerText = whatIsToday;
-  }
+  };
 };
 
 setInterval(setTime, 1000);
