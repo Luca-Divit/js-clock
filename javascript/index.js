@@ -1,7 +1,4 @@
 // console.log('Hello from index.js');
-function day(date) {
-  return date.getDate();
-};
 
 function nameDay(date) {
   const dayObj = {
@@ -37,22 +34,9 @@ function monthDay(date) {
   return dayObj[day];
 };
 
-function setTime() {
-  const time = new Date();
-  const hours = document.querySelector('.hours');
-  const minutes = document.querySelector('.minutes');
-  const seconds = document.querySelector('.seconds');
+function setTheDate(time) {
   const header = document.querySelector('h1');
-  const hour = time.getHours();
-  const minute = time.getMinutes();
-  const second = time.getSeconds();
-  const whatIsToday = `${nameDay(time)} <span style="font-size: 2em; font-family: 'Orbitron', sans-serif;">${day(time)}</span> ${monthDay(time)} ${time.getFullYear()}`;
-  // console.log(hour);
-  // console.log(minute);
-  // console.log(second);
-  seconds.setAttribute('style', `transform: rotate(${(second + 15) / 60 * 360}deg)`);
-  minutes.setAttribute('style', `transform: rotate(${(minute + 15) / 60 * 360}deg)`);
-  hours.setAttribute('style', `transform: rotate(${(hour + 15) / 12 * 360}deg)`);
+  const whatIsToday = `${nameDay(time)} <span style="font-size: 2em; font-family: 'Orbitron', sans-serif;">${time.getDate()}</span> ${monthDay(time)} ${time.getFullYear()}`;
   if (header.innerHTML === whatIsToday) {
     return;
   } else {
@@ -60,4 +44,28 @@ function setTime() {
   };
 };
 
-setInterval(setTime, 1000);
+function moveTheHeads(time) {
+  const hours = document.querySelector('.hours');
+  const minutes = document.querySelector('.minutes');
+  const seconds = document.querySelector('.seconds');
+  const hour = time.getHours();
+  const minute = time.getMinutes();
+  const second = time.getSeconds();
+  seconds.setAttribute('style', `transform: rotate(${(second + 15) / 60 * 360}deg)`);
+  minutes.setAttribute('style', `transform: rotate(${(minute + 15) / 60 * 360}deg)`);
+  hours.setAttribute('style', `transform: rotate(${(hour + 15) / 12 * 360}deg)`);
+};
+
+function setAll() {
+  const time = new Date();
+  setTheDate(time);
+  moveTheHeads(time);
+};
+
+function removeHidden() {
+  const clock = document.querySelector('.clock')
+  clock.setAttribute('style', 'visibility: visible');
+}
+
+setInterval(setAll, 1000);
+setTimeout(removeHidden, 150);
