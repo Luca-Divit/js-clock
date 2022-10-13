@@ -69,3 +69,5 @@ function removeHidden() {
 
 setInterval(setAll, 1000);
 setTimeout(removeHidden, 150);
+
+const x = window.matchMedia("(max-width: 720px)");
