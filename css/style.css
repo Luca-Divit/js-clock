@@ -25,11 +25,15 @@ body {
   from {
     margin-left: 400%;
     visibility: visible;
+    border: solid 1em;
+    border-color: rgba(5,34,115,0);
   }
 
   to {
     margin-left: 0%;
     visibility: visible;
+    border: solid 1em;
+    border-color: rgba(5,34,115,0.9);
   }
 }
 
@@ -82,10 +86,14 @@ h1 {
 @keyframes slideinn {
   from {
     margin-right: 300%;
+    visibility: visible;
+    color: rgba(255, 255, 4, 0);
   }
 
   to {
     margin-left: 0%;
+    visibility: visible;
+    color: rgba(255, 255, 4, 1);
   }
 }
 
@@ -94,12 +102,40 @@ h1 {
     font-size: 1.5em;
     position: relative;
     right: .2em;
-    animation: none;
+    /* animation-duration: 2s; */
+    /* animation: none; */
   }
 
   .clock {
     position: relative;
     right: .5em;
-    animation: none;
+    animation-duration: 4s;
+    /* animation: none; */
+  }
+
+  @keyframes slidein {
+    from {
+      margin-top: 400%;
+      border: solid 1em;
+      border-color: rgba(5,34,115,0);
+    }
+
+    to {
+      margin-bottom: 0%;
+      border: solid 1em;
+      border-color: rgba(5,34,115,0.9);
+    }
+  }
+
+  @keyframes slideinn {
+    from {
+      margin-right: 0%;
+      color: rgba(255, 255, 4, 0);
+    }
+
+    to {
+      margin-right: 0%;
+      color: rgba(255, 255, 4, 1);
+    }
   }
 }
