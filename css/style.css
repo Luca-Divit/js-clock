@@ -109,7 +109,7 @@ h1 {
   .clock {
     position: relative;
     right: .5em;
-    animation-duration: 4s;
+    animation-duration: 3.9s;
     /* animation: none; */
   }
 
